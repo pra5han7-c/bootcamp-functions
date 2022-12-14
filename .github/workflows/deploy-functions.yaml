@@ -25,7 +25,7 @@ jobs:
     strategy:
       matrix:
         function: ${{ fromJson(needs.generate-matrix.outputs.folders) }}
-        # Add environments to deploy to.
+        # Add environments to deploy to....
         # Each environment should have a corresponding github environment with secrets.
         environment:
           - test
